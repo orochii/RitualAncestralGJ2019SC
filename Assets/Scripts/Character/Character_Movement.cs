@@ -51,7 +51,7 @@ public class Character_Movement : MonoBehaviour {
             jump = true;
             animator.SetBool(hash_BJump, true);
         }
-        crouch = vert < 0;
+        crouch = false; // vert < 0;
     }
 
     public void OnLanding(bool value) {
