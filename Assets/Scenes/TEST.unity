@@ -295,6 +295,7 @@ GameObject:
   m_Component:
   - component: {fileID: 74498918}
   - component: {fileID: 74498919}
+  - component: {fileID: 74498920}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -333,6 +334,21 @@ MonoBehaviour:
   flags: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   coins: 0
   mask: 0
+--- !u!114 &74498920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74498917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3b3c378dfd045a418ef560506680c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test_deactivateMusic: 0
+  test_deactivateSound: 0
+  library: {fileID: 11400000, guid: 7b32ddd061baafe4ea1eb929ee73546e, type: 2}
 --- !u!1 &76701279
 GameObject:
   m_ObjectHideFlags: 0
