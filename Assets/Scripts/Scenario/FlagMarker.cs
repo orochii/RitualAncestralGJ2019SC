@@ -11,7 +11,7 @@ public class FlagMarker : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.CompareTag("Player")) {
-            if (activate == null) activate.SetActive(true);
+            if (activate != null) activate.SetActive(true);
             GameManager.SetFlag(idx, val);
             gameObject.SetActive(false);
             ParticleSystem fx = Instantiate<ParticleSystem>(collectEffect, transform.position, Quaternion.identity);
