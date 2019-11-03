@@ -1,25 +1,25 @@
-﻿using System.Collections;
+﻿using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
+[CreateAssetMenu(fileName = "soundLibrary", menuName = "Create sound library")]
 public class SoundLibrary : ScriptableObject {
+    [System.Serializable]
     public class SoundEntry {
-        public string name;
-        public AudioClip[] clips;
+        public string groupID;
+        public AudioClip[] group;
     }
 
-    SoundEntry[] entries;
+    public SoundEntry[] entries;
 
-    public AudioClip GetClip(string name, int idx = -1) {
-        foreach (SoundEntry entry in entries) {
-            if (entry.name.Equals(name)) {
-                // Get 
-                if (idx < 0 || idx > entry.clips.Length) {
-                    idx = UnityEngine.Random.Range(0, entry.clips.Length);
-                }
-                return entry.clips[idx];
+    public AudioClip GetClipFromName(string name, int index = -1) {
+        foreach (SoundEntry e in entries) {
+            if (e.groupID.Equals(name)) {
+                if (index < 0) index = Random.Range(0, e.group.Length);
+                return e.group[index];
             }
         }
         return null;
     }
+    
 }

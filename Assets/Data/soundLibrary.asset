@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66d4a222109293b498caa76bc3f47564, type: 3}
+  m_Name: soundLibrary
+  m_EditorClassIdentifier: 
+  entries:
+  - groupID: steps
+    group:
+    - {fileID: 8300000, guid: 85efbdcf16979554487c5d50bdff26e4, type: 3}
+    - {fileID: 8300000, guid: 242ac135154920f449f67cde06ca0c06, type: 3}
+    - {fileID: 8300000, guid: a9b04fe1e77de2c469747dfa0c7bdaad, type: 3}
+    - {fileID: 8300000, guid: 775e684eb6d73cb47b5b62a1526627d0, type: 3}
+    - {fileID: 8300000, guid: f44639bdf8e689c43b65e5860b42fdb0, type: 3}
+    - {fileID: 8300000, guid: 3859933bd8c50a243b5ea3d93089a51e, type: 3}
