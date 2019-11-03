@@ -21,6 +21,7 @@ public class EnemyController : MonoBehaviour {
     [SerializeField] private CharacterController2D character;
     [SerializeField] private Animator anim;
     [SerializeField] private TrailRenderer attackTrail;
+    [SerializeField] private AudioSource audioSource;
     private Vector3 targetPosition;
     private bool foundPlayer;
     private bool setup;
@@ -85,9 +86,11 @@ public class EnemyController : MonoBehaviour {
             if (detectAttack.PlayerInArea) {
                 anim.SetTrigger(hash_TAttack);
                 attackTimer = Time.time + attackCooldown;
+                AudioManager.instance.PlaySoundFromSource(audioSource, "grunt");
             } else if (detectUpAttack.PlayerInArea) {
                 anim.SetTrigger(hash_TAttackUp);
                 attackTimer = Time.time + attackCooldown;
+                AudioManager.instance.PlaySoundFromSource(audioSource, "grunt");
             }
         }
     }
@@ -110,5 +113,6 @@ public class EnemyController : MonoBehaviour {
 
     public void SetTrail(int v) {
         attackTrail.emitting = (v > 0);
+        if (v <= 0) AudioManager.instance.PlaySoundFromSource(audioSource, "hit");
     }
 }

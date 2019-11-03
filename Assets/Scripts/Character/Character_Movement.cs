@@ -5,6 +5,7 @@ using UnityEngine;
 public class Character_Movement : MonoBehaviour {
     public CharacterController2D controller;
     public Animator animator;
+    [SerializeField] private CharacterEffectControl effectControl;
 
     public float runSpeed = 40f;
     public float sprintSpeed = 80f;
@@ -56,6 +57,7 @@ public class Character_Movement : MonoBehaviour {
 
     public void OnLanding(bool value) {
         animator.SetBool(hash_BJump, value);
+        effectControl.SetLand(value);
     }
 
     // This is a dynamic bool returning

@@ -12,6 +12,7 @@ public class CoinCollectible : MonoBehaviour {
             gameObject.SetActive(false);
             ParticleSystem fx = Instantiate<ParticleSystem>(coinFXPrefab, transform.position, Quaternion.identity);
             Destroy(fx.gameObject, 1f);
+            AudioManager.instance.PlaySound("coins", transform.position);
         }
     }
 }
