@@ -20,7 +20,7 @@ public class BackParallax : MonoBehaviour {
         UpdatePosition();
     }
 
-    void FixedUpdate() {
+    void LateUpdate() {
         UpdatePosition();
     }
 
