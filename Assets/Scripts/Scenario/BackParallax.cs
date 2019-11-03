@@ -13,6 +13,10 @@ public class BackParallax : MonoBehaviour {
     [SerializeField] private Transform target;
 
     void Start() {
+        if (target == null) {
+            GameObject go = GameObject.FindGameObjectWithTag("Player");
+            if (go != null) target = go.transform;
+        }
         UpdatePosition();
     }
 
@@ -21,9 +25,12 @@ public class BackParallax : MonoBehaviour {
     }
 
     void UpdatePosition() {
+        if (target == null) return;
+        transform.position = target.position + Vector3.forward * -10f;
         foreach (ParallaxData p in data) {
             Vector2 pos = target.position * p.speed;
             p.obj.material.mainTextureOffset = pos;
         }
     }
+    
 }
