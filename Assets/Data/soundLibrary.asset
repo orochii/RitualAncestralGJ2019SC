@@ -21,3 +21,17 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 775e684eb6d73cb47b5b62a1526627d0, type: 3}
     - {fileID: 8300000, guid: f44639bdf8e689c43b65e5860b42fdb0, type: 3}
     - {fileID: 8300000, guid: 3859933bd8c50a243b5ea3d93089a51e, type: 3}
+  - groupID: coins
+    group:
+    - {fileID: 8300000, guid: 7fa2b01f18c44d7428e6ef7521876fbd, type: 3}
+    - {fileID: 8300000, guid: 98afb99829778ef478e1c3604820ca1c, type: 3}
+  - groupID: grunt
+    group:
+    - {fileID: 8300000, guid: 78cddb54ad42b37459d1110074ed684c, type: 3}
+    - {fileID: 8300000, guid: aab1931e00372bf4bb4ea0790fffaf1f, type: 3}
+  - groupID: hit
+    group:
+    - {fileID: 8300000, guid: 124d8ddfcf68a6b49930f4bc19e367f8, type: 3}
+    - {fileID: 8300000, guid: e2c722de7f7000d49a166672ead1e49e, type: 3}
+    - {fileID: 8300000, guid: 65c9abce5646d394fa7f698c9f5c91a6, type: 3}
+    - {fileID: 8300000, guid: 1c1d38c98931f9d4fb5e024745eefdea, type: 3}
